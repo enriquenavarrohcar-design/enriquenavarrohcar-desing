@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pokémon — Página sencilla</title>
+  <style>
+    /* Estilos simples y responsivos */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(180deg, #f8f9fa, #e9f2ff);
+      color: #111;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(17,24,39,0.08);
+      max-width: 900px;
+      width: 100%;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 1rem;
+      align-items: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid #e6e9ef;
+      background: #fff;
+    }
+    h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.6rem;
+    }
+    p {
+      margin: 0.25rem 0 0.75rem 0;
+      line-height: 1.5;
+    }
+    .actions {
+      margin-top: 0.5rem;
+    }
+    button {
+      background: #ffcb05; /* color tipo Pokémon */
+      border: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    /* Layout para pantallas pequeñas */
+    @media (max-width: 640px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <!-- Imagen: puedes usar una imagen local (images/pikachu.png) o una URL externa -->
+    <figure>
+      <!-- Ejemplo local: src="images/pikachu.png" -->
+      <!-- Ejemplo URL: src="https://example.com/pikachu.png" -->
+      <img id="poke-image" src="imagenes/pikachu.png" alt="Imagen de Pikachu">
+      <figcaption style="font-size:0.85rem; color:#666; margin-top:0.4rem;">
+        Pikachu — uno de los Pokémon más famosos
+      </figcaption>
+    </figure>
+
+    <section>
+      <h1>Pikachu</h1>
+      <p>
+        Pikachu es un Pokémon de tipo Eléctrico introducido en la primera generación.
+        Es conocido por su aspecto tierno y por almacenar electricidad en sus mejillas.
+        Es la mascota no oficial de la serie Pokémon y compañero habitual de Ash en el anime.
+      </p>
+
+      <div class="actions">
+        <button id="more-btn">Mostrar dato curioso</button>
+        <span id="fact" style="margin-left:0.8rem; font-style:italic; color:#333"></span>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Pequeña interacción: botón para mostrar un dato curioso
+    const facts = [
+      "Pikachu evoluciona a Raichu usando una Piedra Trueno (Thunder Stone).",
+      "El diseño de Pikachu se inspiró en pequeños roedores y en los electrodomésticos del autor.",
+      "Pikachu aparece en la mayoría de videojuegos y merchandising de la franquicia."
+    ];
+    const btn = document.getElementById('more-btn');
+    const factEl = document.getElementById('fact');
+
+    btn.addEventListener('click', () => {
+      const rnd = Math.floor(Math.random() * facts.length);
+      factEl.textContent = facts[rnd];
+    });
+  </script>
+</body>
+</html>
