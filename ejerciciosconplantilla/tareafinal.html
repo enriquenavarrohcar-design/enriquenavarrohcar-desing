@@ -50,7 +50,7 @@
       display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;min-height:76vh;padding-top:40px;padding-bottom:40px
     }
     .hero-bg{
-      position:relative;border-radius:18px;overflow:hidden;padding:36px;background-image:url('https://images.unsplash.com/photo-1528744598421-b7d58a6c29d4?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=9b3f9a2a5c4c2fd6e0cc0a6a0a4f6b58');background-size:cover;background-position:center;height:100%;
+      position:relative;border-radius:18px;overflow:hidden;padding:36px;background-image:url('https://images.unsplash.com/photo-1581091870622-3f74c8adad01?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;height:100%;
       box-shadow:0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
     }
     .overlay{background:linear-gradient(90deg, rgba(2,6,23,0.65), rgba(2,6,23,0.25));position:absolute;inset:0}
@@ -152,7 +152,7 @@
 
           <div style="margin-top:18px" class="card-person">
             <div class="avatar">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b3b4a4bc2a6c3f3f2a8a6d1f8d7f5a1" alt="Foto personal">
+              <img src="https://images.unsplash.com/photo-1531251445707-1f000e1e87d0?q=80&w=800&auto=format&fit=crop" alt="Foto personal">
             </div>
             <div class="person-info">
               <h3>Enrique Navarro</h3>
@@ -211,67 +211,45 @@
 
     <!-- PORTAFOLIO -->
     <section id="portfolio">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
-        <h2 style="margin:0">Portafolio</h2>
-        <div class="muted">Proyectos seleccionados</div>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+    <h2 style="margin:0">Portafolio</h2>
+    <div class="muted">Actividades y proyectos escolares</div>
+  </div>
+  <div class="grid" style="margin-top:16px">
+    <article class="project" aria-labelledby="p1">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop" alt="Proyecto educación física"></div>
+      <div class="project-body">
+        <h4 id="p1">Proyecto de Educación Física</h4>
+        <p>Trabajo grupal sobre hábitos saludables, rutinas deportivas y bienestar físico presentado en clase.</p>
+        <div class="actions"><a class="btn" href="#">Ver más</a></div>
       </div>
-
-      <div class="grid" style="margin-top:16px">
-
-        <!-- Proyecto 1 -->
-        <article class="project" aria-labelledby="p1">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f5d5e8ac2a0f7f5a0a7a7b9b0c3d4e1" alt="Mockup proyecto 1"></div>
-          <div class="project-body">
-            <h4 id="p1">Tienda e‑commerce</h4>
-            <p>Plataforma de comercio electrónico con búsqueda optimizada, carrito dinámico y pagos integrados. Enfoque en rendimiento y accesibilidad.</p>
-            <div class="actions">
-              <a class="btn" href="#">Ver más</a>
-              <a class="btn secondary" href="#">Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Proyecto 2 -->
-        <article class="project" aria-labelledby="p2">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b2c3d4e5f6a7b8c9d0e" alt="Mockup proyecto 2"></div>
-          <div class="project-body">
-            <h4 id="p2">Dashboard analítico</h4>
-            <p>Panel interactivo con visualizaciones, filtros y exportación de datos. Componentes reutilizables y diseño responsivo.</p>
-            <div class="actions">
-              <a class="btn" href="#">Ver más</a>
-              <a class="btn secondary" href="#">Código</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Proyecto 3 -->
-        <article class="project" aria-labelledby="p3">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a7b8c9d0e1f2a3b4c5d" alt="Mockup proyecto 3"></div>
-          <div class="project-body">
-            <h4 id="p3">Landing de producto</h4>
-            <p>Landing con micro-interacciones y animaciones sutiles pensado para conversión. Implementado con HTML, CSS y animaciones por JS.</p>
-            <div class="actions">
-              <a class="btn" href="#">Ver más</a>
-              <a class="btn secondary" href="#">Ver diseño</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Proyecto 4 -->
-        <article class="project" aria-labelledby="p4">
-          <div class="thumb"><img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=ae2b3c4d5e6f7a8b9c0d" alt="Mockup proyecto 4"></div>
-          <div class="project-body">
-            <h4 id="p4">App móvil prototipo</h4>
-            <p>Prototipo de app con flujos de usuario, tests de usabilidad y redlines para desarrollo. Entregables listos para handoff.</p>
-            <div class="actions">
-              <a class="btn" href="#">Ver más</a>
-              <a class="btn secondary" href="#">Prototipo</a>
-            </div>
-          </div>
-        </article>
-
+    </article>
+    <article class="project" aria-labelledby="p2">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1605870445919-838d381b1bea?q=80&w=1200&auto=format&fit=crop" alt="Proyecto videojuegos"></div>
+      <div class="project-body">
+        <h4 id="p2">Análisis de Videojuegos</h4>
+        <p>Informe sobre mecánicas, narrativa y diseño de tres videojuegos populares.</p>
+        <div class="actions"><a class="btn" href="#">Ver más</a></div>
       </div>
-    </section>
+    </article>
+    <article class="project" aria-labelledby="p3">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1581090464777-4af99faedc88?q=80&w=1200&auto=format&fit=crop" alt="Proyecto tecnología"></div>
+      <div class="project-body">
+        <h4 id="p3">Presentación de Tecnología</h4>
+        <p>Proyecto escolar sobre la evolución de los ordenadores y la importancia de la informática.</p>
+        <div class="actions"><a class="btn" href="#">Ver más</a></div>
+      </div>
+    </article>
+    <article class="project" aria-labelledby="p4">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1607082349566-1871f5f8447f?q=80&w=1200&auto=format&fit=crop" alt="Proyecto ciencias"></div>
+      <div class="project-body">
+        <h4 id="p4">Experimento de Ciencias</h4>
+        <p>Investigación sencilla sobre reacciones químicas hecha para clase de Física y Química.</p>
+        <div class="actions"><a class="btn" href="#">Ver más</a></div>
+      </div>
+    </article>
+  </div>
+</section>
 
     <!-- CONTACTO -->
     <section id="contacto" style="padding:38px 0 6px">
@@ -342,5 +320,10 @@
     }
   </script>
 
+<div id="asistente" style="position:fixed;bottom:20px;right:20px;background:#1f2937;color:white;padding:14px 18px;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,0.4);cursor:pointer">¿Necesitas ayuda?</div>
+<script>
+  const a=document.getElementById('asistente');
+  a.addEventListener('click',()=>alert('Hola, soy tu asistente virtual. ¿En qué puedo ayudarte?'));
+</script>
 </body>
 </html>
